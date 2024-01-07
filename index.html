@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Software Developer || Personal Portfolio</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon2.ico">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5RQmfKfy+JPvxK5f6kpt8H8j/nZGARLZg6goKtWMIbNIlDz" crossorigin="anonymous">
+
+    <!-- Feather Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+
+    <style>
+        .des-width{
+            max-width: 480px;
+        }
+        /* media query min and max*/
+        @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+            .des-width{
+                max-width: 550px;
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body class="template-color-1 spybody white-version" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="150">
+
+    <!-- Start Header -->
+    <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
+        <div class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
+            <!-- Start Header Left -->
+            <div class="col-lg-2 col-6">
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img id="toogle-logo1" src="assets/images/slider/abhi_logo_light.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Left -->
+            <!-- Start Header Center -->
+            <div class="col-lg-10 col-6">
+                <div class="header-center">
+                    <nav id="sideNav" class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav">
+                        <!-- Start Mainmanu Nav -->
+                        <ul class="primary-menu nav nav-pills">
+                            <li class="nav-item current"><a class="nav-link smoth-animation" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contacts</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#footer">Footer</a></li>
+                            
+                            
+                            
+                        </ul>
+                        <!-- End Mainmanu Nav -->
+                    </nav>
+                    <!-- Start Header Right  --> 
+                    <div class="header-right">
+
+                        <div id="theme-change">
+                            <a id="theme" class=" rn-btn" onclick="toggleTheme()"><i data-feather="moon" style="height: 18px;"></i> Dark</a>
+                        </div>
+                       
+                        
+
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                                <i data-feather="x"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- End Header Right  -->
+                    
+                    <script>
+                        function toggleTheme() {
+                            // Get the elements
+                            const bodyElement = document.body;
+                            const themeIconElement = document.getElementById('theme-icon');
+                            const themeLinkElement = document.getElementById('theme');
+                            const miniThemeLinkElement = document.getElementById('mini-theme');
+                            const logoElement1 = document.getElementById('toogle-logo1');
+                            const logoElement2 = document.getElementById('toogle-logo2');
+                            const logoElement3 = document.getElementById('toogle-logo3');
+                    
+                            // Update the content dynamically
+                            if (bodyElement.classList.contains('white-version')) {
+                                // Light theme
+                                themeLinkElement.innerHTML = '<i id="theme-icon" data-feather="sun" style="height: 18px;"></i> Light';
+                                miniThemeLinkElement.innerHTML = '<i id="theme-icon" data-feather="sun" style="height: 18px;"></i> Light';
+
+                                logoElement1.src = "assets/images/slider/abhi_logo_dark.png";
+                                logoElement2.src = "assets/images/slider/abhi_logo_dark.png";
+                                logoElement3.src = "assets/images/slider/abhi_logo_dark.png";
+
+                            } else {
+                                // Dark theme
+                                themeLinkElement.innerHTML = '<i id="theme-icon" data-feather="moon" style="height: 18px;"></i> Dark';
+                                miniThemeLinkElement.innerHTML = '<i id="theme-icon" data-feather="moon" style="height: 18px;"></i> Dark';
+
+                                logoElement1.src = "assets/images/slider/abhi_logo_light.png";
+                                logoElement2.src = "assets/images/slider/abhi_logo_light.png";
+                                logoElement3.src = "assets/images/slider/abhi_logo_light.png";
+                            }
+
+                            bodyElement.classList.toggle('white-version');
+                            
+                            feather.replace();
+                        }
+                       
+                    </script>
+
+                </div>
+            </div>
+            <!-- End Header Center -->
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top" style="padding-bottom: 0;">
+                <div class="menu-header" style="padding-top: 20px;">
+                    <a class="logo" href="index.html">
+                            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <img id="toogle-logo2" src="assets/images/slider/abhi_logo_light.png" alt="logo" style="width: 80%;">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                    </div>
+                </div>
+                    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <p class="discription"></p>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills onepagenav">
+                    <li class="nav-item current"><a class="nav-link smoth-animation" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#Contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#footer">Footer</a></li>
+                </ul>
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <div id="theme-icon-change">
+                        <a id="mini-theme" class="rn-btn" onclick="toggleTheme()"><i data-feather="moon" style="height: 18px;"></i>Dark</a>
+                    </div>
+                    <!-- <span class="title">find with me</span> -->
+                    <ul class="social-share d-flex liststyle">
+                            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        <!-- <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg></a>
+                        </li>
+                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
+                        </li>
+                        <li class="linkedin"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+
+    <main class="main-page-wrapper">
+
+        <!-- Start Slider Area -->
+        <div id="home" class="rn-slide-area">
+            <div class="slide slider-style-3">
+                <div class="container">
+                    <div class="row slider-wrapper">
+                        <div class="order-2 order-xl-1 col-lg-12 col-xl-5 mt_lg--50 mt_md--50 mt_sm--50">
+                            <div class="slider-info">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-12">
+                                        <div class="user-info-top">
+                                            <div class="user-info-header">
+                                                <div class="user">
+                                                    <i data-feather="user"></i>
+                                                </div>
+                                                <h2 class="title">
+                                                    Hi, I’m <span>Abhijeet</span><br>
+                                                    
+                                                </h2>
+                                                
+                                                
+                                                <p class="disc">Web designer and developer working for Ellipsonic India Solutions Pvt. Ltd at Bangalore, India.
+                                                </p>
+                                            </div>
+                                            <div class="user-info-footer">
+                                                <div class="info">
+                                                    <i data-feather="file"></i>
+                                                    <span>Web designer & developer</span>
+                                                </div>
+                                                <div class="info">
+                                                    <i data-feather="mail"></i>
+                                                    <span>abhijeet2000jsr@gmail.com</span>
+                                                </div>
+                                                <div class="info">
+                                                    <i data-feather="map-pin"></i>
+                                                    <span>Bangalore</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-12">
+                                        <div class="user-info-bottom">
+                                            <span>Download my curriculum vitae: </span>
+                                            <div class="button-wrapper d-flex">
+                                                <a class="rn-btn mr--30" href="./assets/resume/abhi_resume.pdf" download><span>DOWNLOAD CV</span></a>
+                                                <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-1 order-xl-2 col-lg-12 col-xl-7">
+                            <div class="background-image-area">
+                                <div class="thumbnail-image">
+                                    <img src="assets/images/slider/abhijeet_images.jpg" alt="Personal Portfolio">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slider Area -->
+
+        <!-- Start Service Area -->
+        <div class="rn-service-area rn-section-gap section-separator" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-left" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                            <span class="subtitle">Features</span>
+                            <h2 class="title">What I Do</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row--25 mt_md--10 mt_sm--10">
+
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="code"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Web Development</a></h4>
+                                    <p class="description">Building responsive and user-friendly web applications using the latest technologies.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="smartphone"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Mobile App Development</a></h4>
+                                    <p class="description">Creating native and cross-platform mobile applications for iOS and Android platforms.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="database"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Database Design</a></h4>
+                                    <p class="description">Designing efficient and scalable databases to ensure optimal performance.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="server"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Backend Development</a></h4>
+                                    <p class="description">Building robust and scalable server-side applications and APIs using technologies like Node.js, Express, and MongoDB.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="twitch"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Frontend Development</a></h4>
+                                    <p class="description">Crafting responsive and interactive user interfaces using HTML, CSS, and JavaScript frameworks like React.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="codepen"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Data Manipulation (Python)</a></h4>
+                                    <p class="description">Performing data analysis and manipulation using Python, including libraries like Pandas and NumPy.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="cpu"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">AI Model (YOLOv5)</a></h4>
+                                    <p class="description">Creating AI models based on Convolutional Neural Networks (CNN) using YOLOv5 for object detection.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="wifi"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">AI Model (ANN)</a></h4>
+                                    <p class="description">Building Artificial Neural Network (ANN) based AI models for various applications.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+
+                    <!-- Start Single Service -->
+                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-service">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i data-feather="layers"></i>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title"><a href="#">Interactive UI Components</a></h4>
+                                    <p class="description">Enhance user engagement with interactive and dynamic UI components.</p>
+                                    <a class="read-more-button" href="#"><i class="feather-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <a class="over-link" href="#"></a>
+                        </div>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+            </div>
+        </div>
+        <!-- End Service Area  -->
+
+        <!-- Start Experience area -->
+        <div id="experiences" class="rn-experience-area section-separator rn-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
+                            <span class="subtitle">Over 1+ years of experience</span>
+                            <h2 class="title">My Experience</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--10">
+                    <div class="col-12 mt_experience">
+
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-01.jpg" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2022 - Present</span>
+                                    <h4 class="experience-title">
+                                        Web Development
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Web Designer & Developer
+                                    </h6>
+                                    <p class="disc des-width">Led the development of responsive and user-friendly web applications using the latest technologies for various clients.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+
+
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-02.jpg" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2022 - Present</span>
+                                    <h4 class="experience-title">
+                                        Frontend Development
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Frontend Developer
+                                    </h6>
+                                    <p class="disc des-width">Crafted responsive and interactive user interfaces using HTML, CSS, and JavaScript frameworks like React.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+
+                        <!-- Backend Development -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-03.jpg" alt="Backend Development">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2022 - Present</span>
+                                    <h4 class="experience-title">
+                                        Backend Development
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Backend Developer
+                                    </h6>
+                                    <p class="disc des-width">Built robust and scalable server-side applications and APIs using technologies like Node.js, Express, and MongoDB.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Backend Development -->
+
+                        <!-- AI Model (CNN with YOLOv5) -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-04.jpg" alt="AI Model (CNN with YOLOv5)">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2023 - Present</span>
+                                    <h4 class="experience-title">
+                                        AI Model (CNN with YOLOv5)
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        AI Developer
+                                    </h6>
+                                    <p class="disc des-width">Developed and implemented AI models based on Convolutional Neural Networks (CNN) using YOLOv5 for object detection in civil projects.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End AI Model (CNN with YOLOv5) -->
+
+
+                        <!-- AI Model (ANN) -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-05.jpg" alt="AI Model (ANN)">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2023 - Present</span>
+                                    <h4 class="experience-title">
+                                        AI Model (ANN)
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        AI Developer
+                                    </h6>
+                                    <p class="disc des-width">Designed and implemented Artificial Neural Network (ANN) based AI models for various applications in civil projects.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End AI Model (ANN) -->
+
+
+                        <!-- Database Design and Data Manipulation -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-06.jpg" alt="Database Design and Data Manipulation">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2023 - Present</span>
+                                    <h4 class="experience-title">
+                                        Database Design
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Database Developer
+                                    </h6>
+                                    <p class="disc des-width">Designed efficient and scalable databases and performed data analysis.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Database Design and Data Manipulation -->
+
+                        <!-- Database Design and Data Manipulation -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-01.jpg" alt="Database Design and Data Manipulation">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2023 - Present</span>
+                                    <h4 class="experience-title">
+                                        Data Analyst
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Python Developer
+                                    </h6>
+                                    <p class="disc des-width">Performed data analysis and manipulation using Python, including libraries like Pandas and NumPy.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Database Design and Data Manipulation -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Experience area -->
+
+        <!-- Start education section -->
+        <div id="educations" class="rn-education-area rn-section-gap section-separator">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
+                            <span class="subtitle">Bachelor</span>
+                            <h2 class="title">Education</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--10">
+                    <div class="col-12 mt_experience">
+                        <!-- single skills -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="experience-style-two">
+                            <div class="experience-left">
+                                <div class="experience-image">
+                                    <img src="assets/images/portfolio/portfolio-04.jpg" alt="Personal Portfolio">
+                                </div>
+                                <div class="experience-center">
+                                    <span class="date">2018 - 2022</span>
+                                    <h4 class="experience-title">
+                                        Bachelors Of Technology.
+                                    </h4>
+                                    <h6 class="subtitle">
+                                        Electrical & Electronics Engineering
+                                    </h6>
+                                    <p class="disc des-width">Embarked on a transformative journey in Electrical & Electronics Engineering, laying the foundation for my career as a Web Designer & Developer. Acquired invaluable skills that continue to shape my approach to innovative solutions.</p>
+                                </div>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-footer">
+                                    <a class="rn-btn smoth-animation" href="#contacts"><span>CONTACT ME</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single skills -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End education section -->
+
+        <!-- Start Resume Area -->
+        <div class="rn-resume-area rn-section-gap section-separator" id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="section-title text-center">
+                            <span class="subtitle">1+ Years of Experience</span>
+                            <h2 class="title">My Resume</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt--45">
+                    <div class="col-lg-12">
+                        <ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" class="rn-nav-list nav nav-tabs" id="myTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">education & experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="professional-tab" data-bs-toggle="tab" href="#professional" role="tab" aria-controls="professional" aria-selected="false">professional
+                                    Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Web Development</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="interview-tab" data-bs-toggle="tab" href="#interview" role="tab" aria-controls="interview" aria-selected="false">Python & AI</a>
+                            </li>
+                        </ul>
+
+                        <!-- Start Tab Content Wrapper  -->
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" class="rn-nav-content tab-content" id="myTabContents">
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane show active fade single-tab-area" id="education" role="tabpanel" aria-labelledby="education-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2013 - 2022</span>
+                                                <h4 class="maintitle">Education Quality</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Bachelor Degree</h4>
+                                                                    <span>B.Tech (2018 - 2022)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.30/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">
+                                                              In my B.Tech EEE journey, each day was like unwrapping a tech-savvy gift. From tinkering in labs with wires and circuits to the 'aha' moments during laid-back lectures, my experience was this perfect mix of hands-on fun and brainy revelations. It's not just a degree; it's a journey that sparked my curiosity and lit up my passion for electrical wonders!</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4> Senior Secondary in Science</h4>
+                                                                    <span>JAC (2015 - 2017)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.50/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">Two years of self-discovery and foundational learning. A battleground of exams and personal choices, where resilience met passion, shaping the transition from familiar corridors to the realm of the unknown</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Higher Secondary</h4>
+                                                                    <span>JAC (2013 - 2015)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.80/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"> In the realm of school life, each day unfolded as a journey of innocence and curiosity, laying the groundwork for friendships and the joy of learning. It was a chapter of exploration, where the simplicity of early education nurtured the roots that would anchor the tree of knowledge in later years.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                        <!-- Start Skill List Area 2nd  -->
+                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                            <div class="content">
+                                                <span class="subtitle">2022 - Present</span>
+                                                <h4 class="maintitle">Job Experience</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Ellipsonic India Solutions Pvt. Ltd</h4>
+                                                                    <span> (2022 - Present)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.70/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description">
+                                                                1+ years of experience in developing various applications using Node Js, Express Js, MySQL , Mongo Db , HTML5, CSS3, Java Script , React Js and UI technologies.
+                                                                Great depth of knowledge on Restful API, MVC like architectures in application development.
+                                                                Proficient in requirements analysis and project documentation.
+                                                                </p>
+                                                                <p class="description">
+                                                                Able to communicate effectively with both technical and non-technical project stake holders.
+                                                                Worked efficiently on JavaScript, jQuery, React JS, Express JS
+                                                                Exceptional Analytical, interpersonal, problem solving and communication skills.
+                                                                Proven record of reliability and ability to work under high pressure.
+                                                                Proactive team player, also able to work on own initiative with minimal supervision.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <!-- <div class="title">
+                                                                    <h4>Ellipsonic India Solutions Pvt. Ltd</h4>
+                                                                    <span> (2018 - 2022)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.70/5</span>
+                                                                </div> -->
+                                                            </div>
+                                                            <p class="description"></p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade " id="professional" role="tabpanel" aria-labelledby="professional-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row row--40">
+
+                                        <!-- Start Single Progressbar  -->
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="progress-wrapper">
+                                                <div class="content">
+                                                    <span class="subtitle">Features</span>
+                                                    <h4 class="maintitle">Frontend Skill</h4>
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">HTML</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">90%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">CSS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">85%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">JAVASCRIPT</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">75%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">EJS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">85%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">React Js</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 65%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">65%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">UI Conponents</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".8s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">80%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Progressbar  -->
+
+                                        <!-- Start Single Progressbar  -->
+                                        <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
+                                            <div class="progress-wrapper">
+                                                <div class="content">
+                                                    <span class="subtitle">Features</span>
+                                                    <h4 class="maintitle">Development Skill</h4>
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Node JS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">80%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Express JS</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">75%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">MongoDB</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">70%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">MySQL</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">75%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">Python (Data Manupulation)</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay=".7s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">60%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">AI (ANN)</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".8s" role="progressbar" style="width: 65%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">65%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                    <!-- Start Single Progress Charts -->
+                                                    <div class="progress-charts">
+                                                        <h6 class="heading heading-h6">AI (CNN)</h6>
+                                                        <div class="progress">
+                                                            <div class="progress-bar wow fadeInLeft" data-wow-duration="1.1s" data-wow-delay=".9s" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">60%</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single Progress Charts -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Progressbar  -->
+
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2022 - Present</span>
+                                                <h4 class="maintitle">Projects</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Clinic Management System (CMS)</h4>
+                                                                    <span>Dec - Jan (2023 - 2024)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.30/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer and Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MySQL, HTML5, Bootstrap, Restful API, CSS3, EJS</p>
+                                                            <p class="description"><strong>Description : </strong> Designed and developed a comprehensive Clinic Management System (CMS) featuring a multi-panel architecture, including Admin, Doctor, Patient, Dispensary, and Superadmin interfaces. The system streamlines the workflow of healthcare facilities, enhancing efficiency and patient care.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>VerifyCerts</h4>
+                                                                    <span>Oct - Nov 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.50/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer and Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MongoDB, HTML5, Bootstrap, Restful API, CSS3, EJS</p>
+                                                            <p class="description"><strong>Description : </strong> Designed and implemented a Certificate Management System (CMS), a Software-as-a-Service (SaaS) application tailored for educational institutions, with a focus on streamlined certificate creation and secure verification.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Student Management System (SMS)</h4>
+                                                                    <span>April - May 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.95/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Frontend Developer Backend Developer and Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MySQL, HTML5, Bootstrap, Restful API, CSS3, EJS</p>
+                                                            <p class="description"><strong>Description : </strong> Designed and developed a Student Management System (SMS) application to streamline administrative processes and enhance student engagement for educational institutions. The system serves as a centralized platform for managing student profiles, grades, and related information.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                        <!-- Start Skill List Area 2nd  -->
+                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                            <div class="content">
+                                                <span class="subtitle"></span>
+                                                <h4 class="maintitle"></h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>HR Solution</h4>
+                                                                    <span>Feb - March 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.70/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer and Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MongoDB, HTML5, Bootstrap, Restful API, CSS3, EJS</p>
+                                                            <p class="description"><strong>Description : </strong> Developed an advanced Template Generator platform tailored for companies needing to streamline the process of generating offer letters and various other documents. The platform features both admin and user panels, offering flexibility for users to upload templates and generate personalized letters with ease.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>UCMPH Academy</h4>
+                                                                    <span>Sep - Oct 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.80/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer and Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MongoDB, HTML5, Bootstrap, Restful API, CSS3, EJS</p>
+                                                            <p class="description"><strong>Description : </strong> Developed a comprehensive UCMPH Academy Platform, offering personalized insights into individuals' characteristics based on their date of birth. The platform incorporates user and admin panels, enabling users to generate detailed reports and admins to manage the entire system efficiently.</p>
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Ecommece</h4>
+                                                                    <span>Aug 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>5.00/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer and MySQL Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MySQL, React Js, Bootstrap, Restful API, MySQL</p>
+                                                            <p class="description"><strong>Description : </strong> Developed a specialized E-commerce application tailored for industry employees to streamline procurement processes and enhance convenience. The application is equipped with distinct panels catering to various user roles, including Superadmin, Admin, User, and Vendor.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+
+                            <!-- Start Single Tab  -->
+                            <div class="tab-pane fade" id="interview" role="tabpanel" aria-labelledby="interview-tab">
+                                <div class="personal-experience-inner mt--40">
+                                    <div class="row">
+                                        <!-- Start Skill List Area  -->
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <div class="content">
+                                                <span class="subtitle">2022 - Present</span>
+                                                <h4 class="maintitle">Projects</h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Character Bank</h4>
+                                                                    <span>June - Aug 2022</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.30/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer and Database Architecture and Design, Team Leader.</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, Node Js, Express JS, MySQL, HTML5, Bootstrap, Restful API, CSS3, EJS, Python, Artificial Neural Network (ANN)</p>
+                                                            <p class="description"><strong>Description : </strong> Contributed to the development and implementation of an innovative Character Analysis software, CharacterBank, leveraging Numerology patterns detected by an Artificial Neural Network (ANN) model. The application serves as a platform for users to generate detailed character reports based on their personal data, guided by the principles of Numerology. The project involves both user and admin panels, providing a comprehensive experience for character analysis enthusiasts.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4> Numerology AI Model (ANN) </h4>
+                                                                    <span>Oct 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.50/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Python Developer (Build AI Model)</p>
+                                                            <p class="description"><strong>Technologies : </strong> Python And its libraries like Pandas Tensorflow</p>
+                                                            <p class="description"><strong>Description : </strong> Designed and Developed an Artificial Neural Network (ANN) model for the analysis of Numerology patterns in user-provided data. Utilized the model to detect and interpret character traits, strengths, and challenges based on the principles of Numerology.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Data Analysis (Civil Project)</h4>
+                                                                    <span>Jan 2024</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.80/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Python Developer </p>
+                                                            <p class="description"><strong>Technologies : </strong> Python and its libraries like Pandas Flask </p>
+                                                            <p class="description"><strong>Description : </strong> Implemented a data analysis solution for a Civil Project involving the organization of pipe alignment coordinates. The challenge was to decipher and organize a jumble of coordinates corresponding to various pipes. Developed Python scripts utilizing libraries such as Pandas and Flask to sort and categorize the coordinates based on pipe specifications. This process streamlined the data, providing clarity on the relationship between each pipe and its respective coordinates.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+
+                                        <!-- Start Skill List Area 2nd  -->
+                                        <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
+                                            <div class="content">
+                                                <span class="subtitle"></span>
+                                                <h4 class="maintitle"></h4>
+                                                <div class="experience-list">
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>PPE Servillence</h4>
+                                                                    <span>Dec - Jan (2023 - 2024)</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.70/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer (Build Model)</p>
+                                                            <p class="description"><strong>Technologies : </strong> CNN, Python, AI Framework: YOLOv5, Real-time Monitoring : Shinobi</p>
+                                                            <p class="description"><strong>Description : </strong> Contributed to the development and implementation of an AI-based PPE (Personal Protective Equipment) Surveillance system designed for enhanced safety monitoring in construction sites and manufacturing industries. The system integrates seamlessly with CCTV cameras to detect and ensure the usage of safety equipment such as helmets, boots, and vests by workers. The core technology employed in this project is a customized Convolutional Neural Network (CNN) model based on YOLOv5.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Clicks To Memories</h4>
+                                                                    <span>Dec 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>4.95/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> Backend Developer</p>
+                                                            <p class="description"><strong>Technologies : </strong> Visual Studio Code, NPM, Node JS, ExpressJS,  HTML5, Bootstrap, WEB API, CSS3</p>
+                                                            <p class="description"><strong>Description : </strong> Contributed to the development of a static website called "Click to Memory," providing users with an interactive platform to select images and conveniently book appointments. As a backend developer, my primary responsibilities included gathering user information, processing bookings, and implementing a robust email notification system.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                    <!-- Start Single List  -->
+                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" data-aos-once="true" class="resume-single-list">
+                                                        <div class="inner">
+                                                            <div class="heading">
+                                                                <div class="title">
+                                                                    <h4>Time Series Analysis</h4>
+                                                                    <span>Sep 2023</span>
+                                                                </div>
+                                                                <div class="date-of-time">
+                                                                    <span>5.00/5</span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="description"><strong>Role : </strong> python Developer </p>
+                                                            <p class="description"><strong>Technologies : </strong> Python and its libraries like Pandas NumPy </p>
+                                                            <p class="description"><strong>Description : </strong> Implemented a Time Series Analysis project focused on detecting movement patterns of individuals. The project involved handling a significant amount of data stored in Excel files. The initial steps included sorting the data based on time and date parameters. Addressed missing data by applying data imputation techniques, specifically filling gaps with average values. Finally, the analysis involved checking the coordinates of a person within a two-minute timeframe to identify any significant changes in movement. This comprehensive approach provided insights into the dynamics of the person's mobility over time.</p>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Single List  -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Skill List Area  -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Tab  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Resume Area -->
+
+
+        <!-- Start Contact section -->
+        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <span class="subtitle">Contact</span>
+                            <h2 class="title">Contact With Me</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
+                    <div class="col-lg-5">
+                        <div class="contact-about-area">
+                            <div class="thumbnail">
+                                <img src="assets/images/slider/contact1.png" alt="contact-img">
+                            </div>
+                            <div class="title-area">
+                                <h4 class="title">Abhijeet Kumar</h4>
+                                <span>Software Developer</span>
+                            </div>
+                            <div class="description">
+                                <p>I am available for freelance work. Connect with me via and call in to my account.
+                                </p>
+                                <span class="phone">Phone: <a href="tel:+918539802515">+91-8539802515</a></span>
+                                <span class="mail">Email: <a href="mailto:abhijeet2000jsr@gmail.com">abhijeet2000jsr@gmail.com</a></span>
+                            </div>
+                            <!-- <div class="social-area">
+                                <div class="name">FIND WITH ME</div>
+                                <div class="social-icone">
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                    <a href="#"><i data-feather="linkedin"></i></a>
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div data-aos-delay="600" class="col-lg-7 contact-input">
+                        <div class="contact-form-wrapper">
+                            <div class="introduce">
+
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="mail.php">
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-name">Your Name</label>
+                                            <input class="form-control form-control-lg" name="contact-name" id="contact-name" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact-phone">Phone Number</label>
+                                            <input class="form-control" name="contact-phone" id="contact-phone" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-email">Email</label>
+                                            <input class="form-control form-control-sm" id="contact-email" name="contact-email" type="email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="subject">subject</label>
+                                            <input class="form-control form-control-sm" id="subject" name="subject" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="contact-message">Your Message</label>
+                                            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button name="submit" type="submit" id="submit" class="rn-btn">
+                                            <span>SEND MESSAGE</span>
+                                            <i data-feather="arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contuct section -->
+
+        <!-- Back to  top Start -->
+        <div class="backto-top">
+            <div>
+                <i data-feather="arrow-up"></i>
+            </div>
+        </div>
+        <!-- Back to top end -->
+
+      
+
+    </main>
+
+    <!-- Rn footer area Start -->
+    <div id="footer" class="rn-footer-area footer-style-2 rn-section-gapTop section-separator">
+        <div class="container pb--80 pb_sm--40 plr_sm--20">
+            <div class="row">
+                <div class="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12 d-flex" style="align-items: center;">
+                    <div class="logo-thumbnail">
+                        <a href="#"><img id="toogle-logo3" src="assets/images/slider/abhi_logo_light.png" alt="logo"></a>
+                    </div>
+                    <!-- <div class="social-icone-wrapper">
+                        <ul class="social-share d-flex liststyle">
+                            <li class="facebook"><a href="#"><i data-feather="linkedin"></i></a>
+                            </li>
+                            <li class="instagram"><a href="https://www.instagram.com/abhijeet__kumar__/"><i data-feather="instagram"></i></a>
+                            </li>
+                            <li class="linkedin"><a href="#"><i data-feather="twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="menu-wrapper">
+                        <div class="menu-title">
+                            <h6>My Services</h6>
+                        </div>
+                        <ul class="menu-footer">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Mobile App Development</a></li>
+                            <li><a href="#">SEO Optimization</a></li>
+                            <li><a href="#">Backend Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="menu-wrapper">
+                        <div class="menu-title">
+                            <h6>Quick Access</h6> 
+                        </div>
+                        <ul class="menu-footer">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Center</a></li>
+                            <li><a href="#">Code Samples</a></li> 
+                            <li><a href="#">Knowledge Base</a></li> 
+                            <li><a href="#">Request Assistance</a></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="menu-wrapper">
+                        <div class="menu-title">
+                            <h6>Tech Stack</h6>
+                        </div>
+                        <ul class="menu-footer">
+                            <li><a href="#">React</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">Express.js</a></li>
+                            <li><a href="#">MongoDB</a></li>
+                            <li><a href="#">MySQL</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center ptb--40 section-separator">
+            <p class="description">© 2024. All rights reserved by <a target="_blank" href="/"><em><strong>Abhijeet</strong></em></a>.</p>
+        </div>
+    </div>
+    <!-- Rn footer area end -->
+
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
